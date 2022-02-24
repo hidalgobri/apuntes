@@ -1,0 +1,14 @@
+#function returns True if any element of an iterable is True. If not, it returns False.
+list1 = ['item1','item2','item3']
+list2 = ['item4','item5','item3']
+
+if any(x in list1 for x in list2):
+    print("Duplicates found.")
+else:
+    print("No duplicates found.")
+    
+#Para expresiones regulares
+import re
+
+consulta_usuario_str = input("Ingrese su consulta: ")
+validacion_consulta = re.match("^([A-Za-z]+[ ]{1}(AND|OR|NOT)[ ]{1}[A-Za-z]+([ ]{1}(AND|OR|NOT)[ ]{1}[A-Za-z]+)*)$|^[A-Za-z]+$",consulta_usuario_str)

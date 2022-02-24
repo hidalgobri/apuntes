@@ -153,3 +153,30 @@ const getRectArea = function(width, height) {
 
 console.log(getRectArea(3, 4));
 // expected output: 12
+
+//------------------------------------
+const book = {
+  title: 'Brave New World',
+  author: 'Aldous Huxley',
+}
+
+function summary() {
+  console.log(`${this.title} was written by ${this.author}.`)
+}
+
+summary() // undefined was written by undefined.'
+
+summary.call(book) //'Brave New World was written by Aldous Huxley.'
+// or:
+summary.apply(book) //'Brave New World was written by Aldous Huxley.'
+//---------------------------------------
+
+console.log("---------");
+
+function longerSummary(genre, year) {
+  console.log(
+    `${this.title} was written by ${this.author}. It is a ${genre} novel written in ${year}.`
+  )
+}
+
+longerSummary.call(book, 'dystopian', 1932)

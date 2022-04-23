@@ -1,0 +1,12 @@
+.grid_container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    border: 1px solid blue;
+}
+.right ,.left{
+    border: 1px solid red;
+}
+.left, .right{
+    width: 100%;
+    height: 100%;
+}

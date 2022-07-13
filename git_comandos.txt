@@ -1,0 +1,25 @@
+INICIALIZAR REPO
+git init  **inicializar repositorio 
+
+CHEQUEAR EL STATUS DEL REPOSITORIO
+git status **para saber que archivos aún no se suben
+git log --oneline **check the log of the commits to your Git repository,
+
+HACER COMMIT
+git add . **añado todos los archivos en el repositorio git
+git commit -m "comentario"
+
+CHEQUEAR UN ARCHIVO DE UN COMMIT ANTERIOR
+git checkout <second commit's number> index.html **find the number of the second commit using the git log, and then type the following at the promp
+
+git reset HEAD index.html **To discard the effect of the previous operation and restore index.html to its state at the end of the third commi
+git checkout -- index.html
+
+
+
+REPOSITORIOS EN LINEA
+git remote add origin <repository URL> **Set the local Git repository to set its remote origin
+git push -u origin master **Pushing your commits to the online repository
+
+
+git clone <repository URL> **Cloning an online repository

@@ -55,3 +55,46 @@ conjunto = {hola, 1,2,3}
 conjunto.add(4)
 conjunto.remove(1)
 
+
+#----------Pandas
+#crear un data fram
+#las key son los nombres de las columnas
+#los values son las los elementos de cada col
+songs = { 'album': [1,'jpña','etc'], 'length': [1,2,3,4] }
+df=pd.DataFrame(songs)
+df=pd.DataFrame({'a':[1,2,1],'b':[1,1,1]})
+
+
+df[['nombre_columna']] #dataframe con todas las filas de esa col
+df.ix[0,1] #tomar dato de la fil 0 col 1
+df.ix[0,'nombre_col'] #tomar dato de la fil 0 col nombre_col
+
+
+#seleccionar datos cuando cumplen cierta condicion
+new_df = df[df[condicion]]
+
+
+#----------Numpy
+#numpy tiene arreglos con elementos del mismo tipo
+
+#--indexing and slicing
+#el slicing es igual que en las listas
+
+#cada arreglo es como un vector matemático
+
+#--linspace
+#sirve para hacer gráficos 
+np.linspace(1,20,num=10) #quiero un vector del 1 al 20 con 10 muestras
+
+#--para graficar
+import matplotlib.pyplot as plt
+x= np.linspace(0,2,1)
+y = np.sin(x)
+plt.plot(x,y)
+
+
+#--matrices
+matriz = np.array([[1,1,1][1,1,1]])
+# 1 1 1
+# 1 1 1
+
